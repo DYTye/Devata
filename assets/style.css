@@ -21,3 +21,7 @@
                 letter-spacing: 0.40px;
                 word-wrap: break-word;
             }
+
+            .gray {
+                background-color: rgb(231, 231, 231);
+            }
