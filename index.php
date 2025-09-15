@@ -12,8 +12,8 @@ include 'layouts/header.php'; ?>
                 <button class="btn btn-outline-dark">Secondary Action</button>
             </div>
         </div>
-        <div class="col-12 col-md-6 px-3 ps-5  position-relative">
-            <div class="position-relative w-100" style="padding-top: 70%;">
+        <div class="col-12 col-md-6 px-3 ps-5  position-relative ">
+            <div class="position-relative w-100" style="padding-top: 70%; ">
                 <!-- Desktop placeholder -->
                 <div class="position-absolute top-0 start-50 translate-middle-x w-100 h-100"
                     style="max-width: 100%; border-radius: 20px; overflow: hidden; border:1px solid #C1C7CD; background:white;">
@@ -21,14 +21,12 @@ include 'layouts/header.php'; ?>
                 </div>
 
                 <!-- Mobile placeholder -->
-                <div class="position-absolute translate-middle"
-                    style=" top:65%;left:10% ;max-width: 35%; border-radius: 35px; border:1px solid #C1C7CD; background:white; padding:10px;">
-                    <img src="https://placehold.co/210x449" alt="Mobile Image" class="w-100 h-100 object-fit-cover">
-
+                <div class="position-absolute translate-middle bor"
+                    style=" top:65%;left:10% ;max-width: 35%; border:1px solid #C1C7CD; background:white; padding:5px;">
+                    <img src="https://placehold.co/210x449" alt="Mobile Image" class="w-100 h-100 object-fit-cover bor">
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -49,7 +47,7 @@ include 'layouts/header.php'; ?>
                                 class="fa-sharp fa-solid fa-circle-user fa-4x "></i></div>
                         <div class="col d-flex flex-column justify-content-center align-items-center">
                             <h1>250+</h1>
-                            <p>Happy Customer</p>
+                            <p class="text-xs">Happy Customer</p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +59,7 @@ include 'layouts/header.php'; ?>
                                 class="fa-sharp fa-solid fa-thumbs-up fa-4x"></i></div>
                         <div class="col d-flex flex-column justify-content-center align-items-center">
                             <h1>600+</h1>
-                            <p>Completed Project</p>
+                            <p class="text-xs">Completed Project</p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +71,7 @@ include 'layouts/header.php'; ?>
                                 class="fa-sharp fa-solid fa-globe fa-4x"></i></div>
                         <div class="col d-flex flex-column justify-content-center align-items-center">
                             <h1>1.8K</h1>
-                            <p>Avabile Resource</p>
+                            <p class="text-xs">Avabile Resource</p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +83,7 @@ include 'layouts/header.php'; ?>
                                 class="fa-sharp fa-solid fa-trophy fa-4x"></i></div>
                         <div class="col d-flex flex-column justify-content-center align-items-center">
                             <h1>11K</h1>
-                            <p>Subscribers</p>
+                            <p class="text-xs">Subscribers</p>
                         </div>
                     </div>
                 </div>
@@ -141,6 +139,34 @@ include 'layouts/header.php'; ?>
             </div>
         </div>
     </div>
+
+<div class="row gray py-5 align-items-center">
+    
+    <div class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+        <div class="position-relative bor" style="max-width:350px; width:100%; border:1px solid #C1C7CD; border-radius:55px; overflow:hidden; background:#F2F4F8; padding:8px;">
+            
+            
+            <img src="https://placehold.co/350x750" 
+                 alt="Mobile App" 
+                 class="img-fluid bor" 
+                 style="border-radius:50px; width:100%; display:block;">
+            
+            
+            <div style="position:absolute; top:27px; left:50%; transform:translateX(-50%); width:105px; height:30px; background:#C1C7CD; border-radius:20px;"></div>
+            
+        </div>
+    </div>
+
+    
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-md-start">
+        <h1>Download The App</h1>
+        <p class="mt-3">
+            Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing massa vitae auctor mi massa. 
+            Sodales libero viverra cursus sed duis luctus nulla. In malesuada vulputate pharetra ipsum orci.
+        </p>
+    </div>
+</div>
+
 </div>
 
 <?php

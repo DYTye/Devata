@@ -1,13 +1,16 @@
 <footer>
     <div class="container-fluid bg-secondary">
-        <div class="d-flex justify-content-between px-5 py-4 align-items-center">
+    <div class="row">
+        <div class="col col-12 col-md-12 col-lg-6 d-flex px-5 py-4 align-items-center">
             <a href="" class="navbar-brand brand text-light ">PASAR3D</a>
-
-            <div>
-            <input type="text">
-            <button class="btn btn-outline-light text-light">Subscribe</button>
-            </div>
         </div>
+            <div class="col col-12 col-md-12 col-lg-6  d-flex justify-content-end justify-align-center">
+                <input type="text" class="form-control form-control-sm my-5" placeholder="Email">
+                <button class="btn btn-outline-light text-light btn-sm my-5">Subscribe</button>
+            </div>
+        
+    </div>
+
         <hr class="border border-light border-1 opacity-10">
 
         <div class="row">
@@ -43,8 +46,7 @@
             <p class="text-light">Devata @ 2025. All rights reserved</p>
         </div>
 
-        
+
 
     </div>
 </footer>
-

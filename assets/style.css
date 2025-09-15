@@ -25,3 +25,13 @@
             .gray {
                 background-color: rgb(231, 231, 231);
             }
+
+
+            .text-xs {
+                font-size: 0.8rem;
+                /* bisa disesuaikan */
+            }
+
+            .bor {
+                border-radius: 25px;
+            }
