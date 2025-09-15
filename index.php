@@ -1,7 +1,7 @@
 <?php
 include 'layouts/header.php'; ?>
 <div class="container-fluid ">
-    <div class="row py-5 gray">
+    <div class="row py-5 vh-100 gray">
         <div class="col col-12 col-md-6 px-3 py-5 d-flex flex-column justify-content-center ">
             <h1 class="mb-5">The All-In-One Wireframing Kit</h1>
             <p>Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing massa vitae auctor mi massa. Sodales
@@ -12,7 +12,7 @@ include 'layouts/header.php'; ?>
                 <button class="btn btn-outline-dark">Secondary Action</button>
             </div>
         </div>
-        <div class="col-12 col-md-6 px-3 py-5  position-relative">
+        <div class="col-12 col-md-6 px-3 ps-5  position-relative">
             <div class="position-relative w-100" style="padding-top: 70%;">
                 <!-- Desktop placeholder -->
                 <div class="position-absolute top-0 start-50 translate-middle-x w-100 h-100"
@@ -94,67 +94,50 @@ include 'layouts/header.php'; ?>
 
     </div>
 
-    <div class="row gray pt-5 text-center ">
+    <div class="row gray pt-5 text-center vh-100">
         <h1>Bibendum amet at molestie mattis.</h1>
         <p class="mb-5">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque
             sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.</p>
 
-        <div data-arrows="true" data-circles="true" class="d-flex"
-            style="width: 100%; min-height: 600px; max-width: 800px; margin: 0 auto 100px; background: white; overflow: hidden; border-radius: 20px; outline: 1px #C1C7CD solid; outline-offset: -1px; flex-direction: column;">
+        <div data-arrows="true" data-circles="true" class="d-flex flex-column mx-auto"
+            style="width:100%; max-width:800px; min-height:50vh; background:white; overflow:hidden; border-radius:20px; outline:1px #C1C7CD solid; outline-offset:-1px;">
 
-
-            <div
-                style="align-self: stretch; padding: 16px; justify-content: flex-start; align-items: center; gap: 43px; display: inline-flex">
-                <div style="flex: 1 1 0; justify-content: flex-start; align-items: center; gap: 5px; display: flex">
-                    <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
-                        <div
-                            style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.38px; position: absolute; background: #DDE1E6">
-                        </div>
-                    </div>
-                    <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
-                        <div
-                            style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.38px; position: absolute; background: #DDE1E6">
-                        </div>
-                    </div>
-                    <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
-                        <div
-                            style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.38px; position: absolute; background: #DDE1E6">
-                        </div>
-                    </div>
+            <!-- Top indicators -->
+            <div class="d-flex justify-content-between align-items-center p-3">
+                <div class="d-flex gap-2">
+                    <div style="width:16px; height:16px; background:#DDE1E6; border-radius:50%;"></div>
+                    <div style="width:16px; height:16px; background:#DDE1E6; border-radius:50%;"></div>
+                    <div style="width:16px; height:16px; background:#DDE1E6; border-radius:50%;"></div>
                 </div>
-                <div style="flex: 1 1 0; justify-content: flex-end; align-items: center; gap: 5px; display: flex">
-                    <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
-                        <div
-                            style="width: 7.67px; height: 13.31px; left: 8.34px; top: 5.36px; position: absolute; background: #A2A9B0">
-                        </div>
-                    </div>
-                    <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
-                        <div
-                            style="width: 7.64px; height: 13.29px; left: 8.08px; top: 5.43px; position: absolute; background: #697077">
-                        </div>
-                    </div>
+                <div class="d-flex gap-2">
+                    <div style="width:24px; height:24px; background:#A2A9B0;"></div>
+                    <div style="width:24px; height:24px; background:#697077;"></div>
                 </div>
             </div>
-            <div
-                style="align-self: stretch; flex: 1 1 0; background: #DDE1E6; background-image: url(https://placehold.co/900x524); justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+
+            <!-- Background image / content -->
+            <div class="flex-grow-1 d-flex justify-content-center align-items-center"
+                style="background:#DDE1E6; background-image:url(https://placehold.co/900x524); background-size:cover; background-position:center;">
             </div>
+
         </div>
+
     </div>
 
     <div class="py-5">
         <h1 class="text-center py-5">Our Lovely Team</h1>
         <div class="row d-flex justify-content-center">
             <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
-                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image" class="img-fluid rounded">
             </div>
             <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
-                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image" class="img-fluid rounded">
             </div>
             <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
-                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image" class="img-fluid rounded">
             </div>
             <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
-                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image" class="img-fluid rounded">
             </div>
         </div>
     </div>
