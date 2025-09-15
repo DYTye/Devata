@@ -2,7 +2,7 @@
 include 'layouts/header.php'; ?>
 <div class="container-fluid ">
     <div class="row py-5 gray">
-        <div class="col py-5 mx-5 d-flex flex-column justify-content-center">
+        <div class="col col-12 col-md-6 px-3 py-5 d-flex flex-column justify-content-center ">
             <h1 class="mb-5">The All-In-One Wireframing Kit</h1>
             <p>Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing massa vitae auctor mi massa. Sodales
                 libero viverra cursus sed duis luctus nulla. In malesuada vulputate pharetra ipsum orci.</p>
@@ -12,23 +12,23 @@ include 'layouts/header.php'; ?>
                 <button class="btn btn-outline-dark">Secondary Action</button>
             </div>
         </div>
-        <div class="col-md-6 mx-5 my-5 position-relative" style="min-height: 550px;">
-            <div style="width: 100%; height: 100%; padding-left: 80px; padding-right: 80px; position: relative;">
-
-                <!-- Desktop -->
-                <div
-                    style="width: 745px; height: 521px; position: absolute; top: -16px; left: 96px; background: white; border-radius: 20px; border: 1px solid #C1C7CD; overflow: hidden;">
-                    <img style="width:100%; height:100%; object-fit: cover;" src="https://placehold.co/745x473">
+        <div class="col-12 col-md-6 px-3 py-5  position-relative">
+            <div class="position-relative w-100" style="padding-top: 70%;">
+                <!-- Desktop placeholder -->
+                <div class="position-absolute top-0 start-50 translate-middle-x w-100 h-100"
+                    style="max-width: 100%; border-radius: 20px; overflow: hidden; border:1px solid #C1C7CD; background:white;">
+                    <img src="https://placehold.co/745x473" alt="Desktop Image" class="w-100 h-100 object-fit-cover">
                 </div>
 
-                <!-- Smartphone -->
-                <div
-                    style="position: absolute; top: 78px; left: 0; background: #DDE1E6; border-radius: 35px; border: 1px solid #C1C7CD; padding: 5px;">
-                    <img style="width:210px; height:449px; border-radius: 32px; border: 1px solid #C1C7CD;"
-                        src="https://placehold.co/210x449">
+                <!-- Mobile placeholder -->
+                <div class="position-absolute translate-middle"
+                    style=" top:65%;left:10% ;max-width: 35%; border-radius: 35px; border:1px solid #C1C7CD; background:white; padding:10px;">
+                    <img src="https://placehold.co/210x449" alt="Mobile Image" class="w-100 h-100 object-fit-cover">
+
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -142,7 +142,21 @@ include 'layouts/header.php'; ?>
     </div>
 
     <div class="py-5">
-        <h1 class="text-center">Our Lovely Team</h1>
+        <h1 class="text-center py-5">Our Lovely Team</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+            </div>
+            <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+            </div>
+            <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+            </div>
+            <div class="col col-6 col-md-3 col-lg-3 mb-4  d-flex justify-content-center">
+                <img src="https://placehold.co/308x303" alt="Placeholder Image">
+            </div>
+        </div>
     </div>
 </div>
 
