@@ -1,6 +1,15 @@
+/* Theme Name: Devata
+Theme URI: https://contoh.com
+Author: Aditya
+Description: Tema hasil convert dari PHP Native
+Version: 1.0 */
+
             
+ .bg-red {
+  background-color: red !important;
+}
 
-
+            
             a {
                 text-decoration: none;
             }

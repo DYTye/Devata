@@ -1,5 +1,9 @@
 <?php
-include 'layouts/header.php'; ?>
+/*
+Template Name: Custom Login Page
+*/
+get_header();
+?>
 <div class="container-fluid ">
     <div class="row py-5 vh-100 gray">
         <div class="col col-12 col-md-6 px-3 py-5 d-flex flex-column justify-content-center ">
@@ -169,6 +173,3 @@ include 'layouts/header.php'; ?>
 
 </div>
 
-<?php
-include 'layouts/footer.php';
-?>

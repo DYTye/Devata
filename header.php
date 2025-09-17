@@ -10,9 +10,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		
+		<style> a {
+                text-decoration: none;
+            }
+
+            .brand {
+                color: #2E2E2E;
+                font-size: 32px;
+                font-family: Poppins;
+                font-style: bold;
+                font-weight: 700;
+                word-wrap: break-word;
+
+            }
+
+            .menu {
+                color: #2E2E2E;
+                font-size: 20px;
+                font-family: Poppins;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.40px;
+                word-wrap: break-word;
+            }
+
+            .gray {
+                background-color: rgb(231, 231, 231);
+            }
 
 
+            .text-xs {
+                font-size: 0.8rem;
+                /* bisa disesuaikan */
+            }
 
+            .bor {
+                border-radius: 25px;
+            }</style>
     </head>
 
     <body>
@@ -38,7 +73,8 @@
                         <button class="btn btn-outline-dark d-lg-none">Login</button>
                     </div>
                 </div>
-                <button class="btn btn-outline-dark justify-content-end d-none d-lg-block">Login</button>
+                <a href="<?php echo site_url('/login'); ?>" class="btn"><button class="btn btn-outline-dark justify-content-end d-none d-lg-block">Login</button></a>
+                
 
             </div>
         </nav>
