@@ -71,7 +71,10 @@ if ($_POST) {
           </div>
         <?php elseif (!empty($success)): ?>
           <div class="alert alert-success text-center">
-            <?php echo $success; ?>
+            <?php echo $success; 
+            $email=urldecode($_POST["email"]);
+            ?>
+            <a href="<?php echo site_url('/resend') . '?email='. urlencode(($email)); ?>">Resend Email</a>
           </div>
         <?php endif; ?>
         <form action="" method="post">

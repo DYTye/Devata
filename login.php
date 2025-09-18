@@ -134,10 +134,6 @@ hapus token lama, generate token baru dan kirim email, jika verivikasi sudah oke
                     <p class="text-center">
                         No account yet? <a href="<?php echo site_url('/sign-in'); ?>">Sign Up</a></p>
                 </form>
-
-
-
-
             </div>
         </div>
     </div>
