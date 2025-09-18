@@ -41,15 +41,17 @@ if ($_POST) {
       'user' => $user_id
     ], site_url('/verify'));
     $email = sanitize_email($_POST['email']);
-    $success = 'Registration success, verify your account here: <a href="' . esc_url($verify_link) . '">Verify Now</a>';
+    $success = 'Registration success, check your email to verify your account';
+
+    $headers = ['Content-Type: text/html; charset=UTF-8'];
+    wp_mail(
+      $email,
+      'Verifikasi Akun',
+      'Klik link berikut untuk verifikasi akun: <a href="' . esc_url($verify_link) . '">Verifikasi Sekarang</a>',
+      $headers
+    );
   }
-  $headers = ['Content-Type: text/html; charset=UTF-8'];
-  wp_mail(
-    $email,
-    'Verifikasi Akun',
-    'Klik link berikut untuk verifikasi akun: <a href="' . esc_url($verify_link) . '">Verifikasi Sekarang</a>',
-    $headers
-  );
+
 
 
 }

@@ -13,6 +13,10 @@
 /*
 Template Name: Login Page
 */
+
+/*
+cek akun kalau kirim pesan eror kalau belum verifikasi, jika sudah verifikasi lanjut login
+*/
 if ($_POST) {
     $creds = array();
     $creds['user_login'] = $_POST['email'];
@@ -20,13 +24,30 @@ if ($_POST) {
     $creds['remember'] = true;
     $user = wp_signon($creds, false);
 
-    if (is_wp_error($user)) {
-        $error_message = $user->get_error_message();
-    } else {
-        wp_redirect(home_url());
-        exit;
+    if (!is_wp_error($user)) {
+        $is_verify = get_user_meta($user->ID, 'is_verify', true);
+        if ($is_verify == 0) {
+            $email = urldecode($_POST['email']);
+            wp_redirect(site_url('/resend') . '?email=' . urlencode($email));
+            exit;
+        } else {
+            if (is_wp_error($user)) {
+                $error_message = $user->get_error_message();
+            } else {
+                wp_redirect(home_url());
+                exit;
+            }
+        }
     }
-}
+
+        
+}  
+$resend_success = isset($_GET['success']) ? sanitize_text_field($_GET['success']) : ''; 
+/*
+Ketika login kalau akun belum verifikasi, suruh verifikasi
+hapus token lama, generate token baru dan kirim email, jika verivikasi sudah oke lanjut login
+*/
+
 ?>
 
 
@@ -44,7 +65,12 @@ if ($_POST) {
                             <?php echo $error_message; ?>
                         </div>
                     <?php endif; ?>
+                    <?php if (!empty($resend_success)){
+                            echo '<div class="alert alert-success">'.$resend_success.'</div>';
+                    }
+                    ?>
                 </div>
+                
                 <form action="" method="post">
                     <div class="mb-2">
                         <label for="email" class="form-label" id="email">Email</label>
@@ -59,7 +85,7 @@ if ($_POST) {
                             It must be a combination of minimum 8 letters, numbers, and symbols.
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-2">
                         <div class="col col-6 col-md-6 col-lg-6 d-flex  align-items-center">
                             <input type="checkbox" class="form-check" id="rememberme" name="rememberme">
                             <label for="rememberme">Remember me</label>
