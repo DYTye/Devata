@@ -173,7 +173,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -187,7 +187,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -201,7 +201,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -217,7 +217,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -231,7 +231,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -245,7 +245,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -259,7 +259,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -273,7 +273,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -288,7 +288,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5 ">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -302,7 +302,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -316,7 +316,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -330,7 +330,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -344,7 +344,7 @@ get_header();
         <div class="rounded-xl bg-[#2E2E2E]">
             <div class="flex justify-center">
                 <div class="m-5">
-                    <img src="https://placehold.co/100x100" alt="" class="rounded-full" />
+                    <img src="https://placehold.co/100x100" alt="" class="rounded-full h-[100px] w-[100px]" />
                 </div>
             </div>
 
@@ -423,20 +423,115 @@ get_header();
         </div>
     </div>
 
+
 </main>
 
 
-<div class=" relative w-[1500px] h-[650px] bg-cover bg-center"
-    style="background-image: url('https://placehold.co/1500x650/png');">
+
+<!-- countdown section -->
+<div class="font relative h-[650px] w-full bg-cover bg-center text-white"
+    style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/home.png')">
+    <div class="bg-opacity-70 absolute inset-0 bg-linear-to-t/srgb from-[#BC13FE]/50 to-[#000]">
+        <div class="absolute bottom-10 flex w-full justify-between px-6 md:px-12 lg:px-50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div class="text-5xl font-bold">
+                <div class="my-9 inline-flex items-center rounded-4xl bg-[#212121] px-4 py-2 text-xl">
+                    <div class="mr-4"><img src="https://placehold.co/30x30/png" alt="" class="rounded-full" /></div>
+                    <div>Aditya Arrofi</div>
+                </div>
+                <div>Steampunk Hammer</div>
+                <div class="my-10 text-sm font-semibold">
+                    <a href="" class="inline-block rounded-xl bg-amber-50 p-4 text-black">Lihat Asset</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-center ">
+                <div class="relative rounded-2xl bg-white/10 p-6 text-center text-white shadow-lg backdrop-blur-lg">
+                    <p class="mb-3 text-xs">Akan Dirilis</p>
+                    <div class="flex items-center justify-center space-x-4">
+
+                        <div>
+                            <div id="hours" class="text-4xl font-bold">00</div>
+                            <p class="mt-1 text-sm">Jam</p>
+                        </div>
+
+                        <div class="text-4xl font-bold">:</div>
 
 
-    <div class="justify-between absolute bottom-56 ">halo</div>
+                        <div>
+                            <div id="minutes" class="text-4xl font-bold">00</div>
+                            <p class="mt-1 text-sm">Menit</p>
+                        </div>
 
-    <div class=" w-[1500px] flex justify-between absolute bottom-36 ">
-        <div class="text-5xl font-bold">Steampunk Hammer</div>
-        <div class="text-5xl font-bold">halo</div>
+                        <div class="text-4xl font-bold">:</div>
+
+
+                        <div>
+                            <div id="seconds" class="text-4xl font-bold">00</div>
+                            <p class="mt-1 text-sm">Detik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+
+<main class="max-w-6xl mx-auto my-12 px-4 sm:px-6 lg:px-8 text-white">
+
+    <div class="mt-20 mb-12">
+        <div class="my-6">
+            <h3 class="font-bold text-3xl mb-4">Bagaimana Cara Kerjanya</h3>
+            <p class="font-light text-xl">Cari Tahu Cara Memulainya</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-5">
+        <div class="rounded-xl bg-[#2E2E2E]">
+            <div class="flex justify-center">
+                <div class="m-5">
+                    <img src="https://placehold.co/200x200" alt="" class="rounded-full" />
+                </div>
+            </div>
+
+            <div class="flex justify-center font-semibold"> Jadilah Kreator</div>
+            <div class="flex justify-between p-4">
+                <div class="ms-2 font-light text-center text-md">Jadilah kreator di Pasar3D Anda untuk di jual di Pasar3D dan pamerkan  karya anda. </div>
+                
+            </div>
+        </div>
+
+        <div class="rounded-xl bg-[#2E2E2E]">
+            <div class="flex justify-center">
+                <div class="m-5">
+                    <img src="https://placehold.co/200x200" alt="" class="rounded-full" />
+                </div>
+            </div>
+
+            <div class="flex justify-center font-semibold">Buat Koleksi</div>
+            <div class="flex justify-center p-4">
+                <div class="ms-2 font-light text-center text-md">Unggah karya Anda dan siapkan koleksi Anda. Tambahkan deskripsi, tautan sosial, dan harga dasar.</div>
+                
+            </div>
+        </div>
+
+        <div class="rounded-xl bg-[#2E2E2E]">
+            <div class="flex justify-center">
+                <div class="m-5">
+                    <img src="https://placehold.co/200x200" alt="" class="rounded-full" />
+                </div>
+            </div>
+
+            <div class="flex justify-center font-semibold">Mulai Menghasilkan</div>
+            <div class="flex justify-center p-4">
+                <div class="ms-2 font-light text-center text-md">Pilih antara lelang dan daftar harga tetap. Mulailah menghasilkan uang dengan menjual Aset Anda.</div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
 
 
 
